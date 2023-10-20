@@ -1,92 +1,182 @@
-body{
-    background-color: rgb(55, 26, 220);
-}
-header{
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+header {
     background-color: darkblue;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-around;
     padding: 1rem;
+    min-height: 7vh;
 }
-.container1, .container2 {
-    border-radius: 13px; 
-    padding: 10px; 
-}
-.container1 {
-    background-color: lightgreen; 
-    
-}
+
+.container1,
 .container2 {
-    background-color:#ffcc00; 
+    border-radius: 25px;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    font-size: 1.5rem; 
+      
 }
-.main1{
-    min-height: 50vh;
-    background-color: rgb(55, 26, 220);
-    margin-top: 0;
+
+.container1 {
+    background-color: lightgreen;
+
 }
-h6{
-    color:azure;
+
+.container2 {
+    background-color: #ffcc00;
+}
+.container1 a{
+    text-decoration: none; 
+
+}
+.container1 a:hover{
+    color: blue;
+}
+.container2 a{
+    text-decoration: none;
+}
+.container2 a:hover{
+    color:blue;
+}
+
+
+.main1 {
+    min-height: 150vh;
+    background-color: rgb(66, 47, 238);
+    margin-top: -2%;
+    flex:1;
+    background-image: url(../images/constellation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: colorChange 1s infinite, backgroundImageAnimation  4s infinite;
+}
+
+  @keyframes backgroundImageAnimation {
+    0% {
+      background-position:center;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+
+h6 {
+    color: azure;
+    margin-left: 50px;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
     margin-left: 50px;
 }
-h1{
-    font-size: 3rem;
-    color: #fff;   
-    margin-left: 50px; 
-}
-h1 span{
+
+h1 span {
     font-size: 2rem;
     display: block;
     margin-left: 60px;
 }
-.listclass{
+
+.listclass {
     list-style-type: none;
     color: #fff;
     display: flex;
     position: absolute;
-    left:50%;
-    top:30%;
-    
+    left: 50%;
+    top: 30%;
+
 }
 
-.listclass li{
+.listclass li {
     margin-right: 10px;
-    padding:1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
-p{
-    font-size: 5rem;
-    color: #fff; 
-    text-align: center;  
-    
+.top-level {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
-p span{
-    font-size: 1rem;
-    display:block;
+.sub-list {
+    display: none;
+    list-style-type: none;
+    margin-right:20px ;
+    margin-left: 20px;
+    position: absolute;
+    top: 100%;
+    box-sizing: border-box; 
+    max-width: 600px;
+    border:2px solid #fff;  
 }
-.main2{
+.sub-list a {
+    text-decoration: none;
+    color: #fff;    
+}
+.sub-list li{
+    border-bottom: 2px solid #fff;
+   
+}
+
+
+.top-level:hover .sub-list {
+    display: block;
+}
+
+
+
+p {
+    font-size: 10rem;
+    color: #fff;
+    text-align: center;
+
+}
+
+p span {
+    font-size: 3rem;
+    display: block;
+}
+
+.main2 {
     background-color: darkblue;
     min-height: 50vh;
+    margin-top: -10%;
 }
-.contenttest{
-    font-size: 1.5rem;
-    display: inline-block;
+
+.contenttest {
+    font-size: 2.5rem;
+    display: block;
     text-align: center;
     padding: 10px;
 }
-.contactus{
+
+.contactus {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     padding: 1rem;
 }
-.container3, .container4 {    
-    border-radius: 13px; 
-    padding: 10px; 
-    color: darkblue; 
-    margin:0 10% 0 10%;   
-}
-.container3 {
-    background-color: #fff;   
-    
-}
+
+.container3,
 .container4 {
-    background-color:#fff; 
+    border-radius: 20px;
+    padding: 10px;
+    color: darkblue;
+    margin: 0 10% 0 10%;
+    background-color: #fff;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;    
 }
 

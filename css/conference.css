@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    min-height: auto;
+    
+    
+   
+    
+}
+body{
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-image: 
+    linear-gradient(to top, #03787c, #fff);
+    background-repeat: no-repeat;
+    
+    
+
+}
+.maincontainer{
+    min-height: auto;
+    
+    
+    margin: 5rem;        
+}
+.container1{
+    min-height: 40vh;
+    text-align: left;
+    background-color: #03787c;
+    color: whitesmoke;  
+    margin-top: 100px;
+    
+}
+.container1 h2{
+    margin-left: 50px;    
+    padding-top: 3%;
+    font-size:3rem;
+}
+.container1 p{
+    margin-left: 50px;
+    padding-top: 1%;
+    font-size: 1.5rem;
+}
+.container2{
+    background-color: #a8d9c9;
+    color: #000;  
+    text-align: left;
+    min-height: 150vh;
+}
+.required::after {
+    content: ' *';
+    color: red;
+  }
+  input{
+    min-width: 900px;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    
+  }
+  label{
+    min-width: 600px;
+    font-size: 2rem;
+    margin-left: 50px;
+    padding-top:-150px;
+  }
