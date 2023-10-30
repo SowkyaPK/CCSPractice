@@ -42,7 +42,7 @@ body{
     font-size: 1.5rem;
 }
 .container2{
-    background-color: #a8d9c9;
+    background-color: #d4efe6;
     color: #000;  
     text-align: left;
     min-height: 150vh;
@@ -62,4 +62,10 @@ body{
     font-size: 2rem;
     margin-left: 50px;
     padding-top:-150px;
+  }
+  .submit-button{
+    min-width: auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #03787c;
   }
